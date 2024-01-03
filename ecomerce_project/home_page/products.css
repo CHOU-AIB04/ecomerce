@@ -1,0 +1,413 @@
+/* -------------this page it's for the product part------- */
+
+/* let's begin with trending product first*/
+#products {
+  position: relative;
+  width: 70%;
+  height: 200vh;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#tittle,
+#featured-article #article-name h1 {
+  position: relative;
+  font-weight: bold;
+  padding-left: 25px;
+}
+#tittle::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid gray;
+  bottom: -5px;
+  left: 0;
+}
+#tittle::after,
+#featured-article #article-name h1::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(164, 111, 214, 0.9);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 10px blueviolet;
+}
+#trending-product {
+  width: 100%;
+  height: 525px;
+  display: flex;
+  justify-content: space-around;
+}
+#trending-product #special-offer {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#trending-product #special-offer:hover {
+  box-shadow: 0 0 10px black;
+  transform: scale(1.01);
+}
+#offer-end {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#offer-end div {
+  display: flex;
+  justify-content: space-evenly;
+  height: 25px;
+}
+#offer-end div p {
+  background-color: rgba(128, 128, 128, 0.685);
+  width: 20%;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 2px;
+  color: black;
+  font-size: 13px;
+  position: relative;
+  backdrop-filter: blur(12px);
+}
+#offer-end div p::after {
+  position: absolute;
+  content: ":";
+  right: -5px;
+}
+#offer-end div p:nth-child(4)::after {
+  display: none;
+}
+#offer-product {
+  width: 70%;
+  height: 45%;
+  background-image: url(../all_pictures/products/apparel4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#offer-product:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px black;
+}
+#offer-product i {
+  transition: 0.5s;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+#offer-product i:hover {
+  transform: scale(1.04);
+}
+#offer-product p {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: gray;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 5px;
+  color: white;
+}
+#offer-info {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#starts {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+#offer-info p {
+  color: grey;
+  font-size: 13px;
+}
+#offer-price {
+  width: 90%;
+}
+#offer-info span {
+  color: black;
+}
+#offer-info h1 {
+  font-size: 18px;
+  padding-left: 5px;
+}
+#price h2 {
+  color: red;
+  font-size: 17px;
+}
+#price {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+#price p {
+  align-self: flex-end;
+  text-decoration: line-through;
+}
+#stock {
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#names {
+  display: flex;
+  justify-content: space-around;
+}
+#count {
+  background-color: rgb(209, 196, 196);
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+#count::after {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 100%;
+  background-color: rgb(15, 199, 137);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/*------------- let's begin the second section in the first article---------*/
+
+#section2 {
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#section2 nav {
+  width: 48%;
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 1s;
+}
+#section2 nav h1 {
+  font-size: 11px;
+}
+#section2 nav:hover {
+  box-shadow: 0 0 10px black;
+  transform: scale(1.002);
+}
+#section2 nav .pic_container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  background-image: url(../all_pictures/products/apparel1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  border-radius: 10px;
+  height: 99%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#section2 nav .pic_container:hover {
+  box-shadow: 0 0 2px black;
+}
+#section2 nav .pic_container p,
+#featured-products nav .picture_container p {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 9px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+#section2 nav .pic_container i,
+#featured-products nav .picture_container i {
+  padding-right: 5px;
+  padding-top: 5px;
+  transition: 0.5s;
+}
+#section2 nav .pic_container i:hover {
+  transform: scale(1.2);
+}
+#section2 nav .product-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: self-start;
+  width: 55%;
+}
+#section2 nav .product-info .first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#section2 nav .product-info .first p,
+#section2 nav .product-info .second p,
+#section2 nav .product-info .third p {
+  font-size: 12px;
+  color: gray;
+}
+#section2 nav .product-info .second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#section2 nav .product-info .second h2 {
+  color: red;
+}
+#section2 nav .product-info .second p {
+  text-decoration: line-through;
+}
+
+/* now the second article that contain featured products */
+#featured-article {
+  margin-top: 20px;
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#featured-article #article-name {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#featured-article #article-name div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80px;
+  cursor: pointer;
+}
+#featured-article #article-name div p,
+#featured-article #article-name div i {
+  transition: 0.5s;
+}
+#featured-article #article-name div:hover p,
+#featured-article #article-name div:hover i {
+  color: gray;
+}
+#featured-article #article-name::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid gray;
+  bottom: 0;
+  left: 0;
+}
+#featured-products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+#featured-products nav {
+  width: 24%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s;
+}
+#featured-products nav:hover {
+  box-shadow: 0 0 10px black, inset 0 0 5px grey;
+}
+#featured-products nav .picture_container {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#featured-products nav .rate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+#featured-products nav .rate p {
+  font-size: 12px;
+  color: grey;
+}
+#featured-products nav .product-details {
+  align-self: flex-start;
+  margin-left: 10px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#featured-products nav .product-details h2 {
+  font-size: 15px;
+}
+#featured-products nav .product-details div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#featured-products nav .product-details div:nth-child(2) h3 {
+  color: red;
+}
+#featured-products nav .product-details div:nth-child(2) p {
+  color: gray;
+  text-decoration: line-through;
+  font-size: 12px;
+}

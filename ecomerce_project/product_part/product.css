@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*this it's style the product info*/
+#products {
+  background-color: aqua;
+  position: absolute;
+  width: 70%;
+  height: 80vh;
+  left: 50%;
+  transform: translate(-50%);
+  top: 40%;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+}
+/* this code it's for style the pictures section*/
+#products #product-pics {
+  width: 45%;
+  background-color: brown;
+  display: flex;
+  justify-content: space-around;
+}
+#product-pics {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#product-pics #main-pic {
+  position: relative;
+  height: 70%;
+  width: 100%;
+  background-image: url(../all_pictures/products/shoe1-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  object-fit: cover;;
+  padding-top: 10px;
+}
+#product-pics #main-pic .sold{
+  font-size: 14px;
+  right: 10px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.479);
+  text-align: center;
+  padding-top: 5px;
+  color: white;
+}
+#product-pics #child-pics {
+  height: 20%;
+  width: 100%;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#product-pics #child-pics div {
+  width: 32%;
+  height: 90%;
+  border-radius: 10px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  object-fit: cover;
+}
+#product-pics #child-pics div:nth-child(1){
+  background-image: url(../all_pictures/products/shoe1-2.jpg);
+}
+#product-pics #child-pics div:nth-child(2){
+  background-image: url(../all_pictures/products/shoe1-1.jpg);
+}
+#product-pics #child-pics div:nth-child(3){
+  background-image: url(../all_pictures/products/shoe1-3.jpg);
+}
+
+#product-pics #child-pics .active {
+  border: 2px solid black;
+}
+          /*----------let's the product info section-------------*/
+
+#product-info{
+  background-color: burlywood;
+}
+#product-info #first_nav{
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#first_nav #rate-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#first_nav #rate-container p:nth-child(2){
+  color: gray;
+  font-size: 13px;
+}
+#first_nav #stock-info{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+#first_nav #stock-info p:nth-child(1){
+  background-color: gray;
+  width: 50%;
+  text-align: center;
+  color: greenyellow;
+}
+#first_nav #stock-info p:nth-child(2){
+  color: gray;
+}
+#first_nav #price-info{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#first_nav #price-info h2{
+  color: red;
+} 
+#first_nav #price-info p{
+  color: gray;
+  text-decoration: line-through;
+  font-size: 15px;
+  margin-right: 10px;
+}
+#first_nav #color-container,#size-container{
+  width: 40%;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+
+}
+#first_nav #color-container button,#size-container button{
+  height: 100%;
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+#first_nav #color-container button:nth-child(1){
+  background-color: white;
+
+}
+#first_nav #color-container button:nth-child(2){
+  background-color: greenyellow;
+  
+}
+#first_nav #color-container button:nth-child(3){
+  background-color: red;
+  
+}
+#first_nav #color-container button.active,#size-container button.active{
+  border: 1px solid black;
+}
+#quantité{
+  background-color: aqua;
+}
+#quantité button{
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}

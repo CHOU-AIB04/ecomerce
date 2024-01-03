@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/*   this code it's style the header part */
+
+/*   let's begin with  the up-nav*/
+
+/*---------------- let's create slide part--------------*/
+
+#slide-list {
+  width: 400%;
+  height: 100%;
+  background-color: blue;
+  position: relative;
+  display: flex;
+  transition: 0.5s;
+}
+#prev {
+  left: 20px;
+}
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  padding-top: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#next {
+  right: 20px;
+}
+#prev:hover,
+#next:hover {
+  background-color: rgba(128, 128, 128, 0.397);
+  box-shadow: 0 0 5px black;
+}
+#slide-list nav {
+  width: 100%;
+  height: 100%;
+  background-color: brown;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+#slide-list nav:nth-child(1) {
+  background-image: url(../all_pictures/slider/slider0.jpg);
+}
+#slide-list nav:nth-child(2) {
+  background-image: url(../all_pictures/slider/slider1.jpg);
+}
+#slide-list nav:nth-child(3) {
+  background-image: url(../all_pictures/slider/slider2.jpg);
+}
+#slide-list nav:nth-child(4) {
+  background-image: url(../all_pictures/slider/slider3.jpg);
+}
+#slide-list nav div {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  top: 60%;
+  left: 25%;
+  transform: translate(-25%, -60%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.856);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+
+  box-shadow: 0 0 100px rgba(255, 255, 255, 0.856),
+    0 0 100px rgba(255, 255, 255, 0.856), 0 0 100px rgba(255, 255, 255, 0.856),
+    0 0 100px rgba(255, 255, 255, 0.856);
+}
+#slide-list nav div p {
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#slide-list nav div h3 {
+  color: grey;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+#slide-list nav div h1 {
+  color: darkslateblue;
+  font-weight: bold;
+  font-size: 25px;
+}
+#slide-list nav div button {
+  width: 100px;
+  height: 25px;
+  border-radius: 20px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#slide-list nav div button:hover {
+  box-shadow: 0 0 10px white;
+  transform: scale(1.05);
+}
+#slider-container #bots {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  list-style: none;
+}
+#slider-container #bots li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
+}
+#slider-container #bots .active {
+  background-color: black;
+}

@@ -1,0 +1,478 @@
+/* this part it's for the header part */
+header {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+header .up-nav {
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+}
+header .up-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+header .up-nav ul li a {
+  text-decoration: none;
+  color: gray;
+  position: relative;
+}
+header .up-nav ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  border-bottom: 2px solid black;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.5s;
+}
+header .up-nav ul li a:hover::after {
+  width: 50%;
+}
+header .up-nav ul:nth-child(1) {
+  width: 300px;
+}
+header .up-nav ul:nth-child(2) {
+  width: 500px;
+}
+header .up-nav ul select {
+  background-color: transparent;
+  border: none;
+  width: 90px;
+  text-align: center;
+  color: gray;
+}
+
+/*   let's begin with  the  down-nav*/
+.down-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.down-nav nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+}
+.down-nav nav h1 {
+  position: relative;
+  font-size: 32px;
+  font-weight: bold;
+}
+.down-nav nav h1::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(164, 111, 214, 0.9);
+  box-shadow: 0 0 10px blueviolet;
+  left: -3px;
+  top: -5px;
+}
+.down-nav nav ul {
+  width: 70%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.down-nav nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+}
+.down-nav nav ul li a::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  border-bottom: 2px solid black;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.5s;
+}
+.down-nav nav ul li a:hover::before {
+  width: 50%;
+}
+.sport a::after {
+  position: absolute;
+  content: "New";
+  background-color: darksalmon;
+  width: 40px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  top: -13px;
+  right: -36px;
+}
+.down-nav #user {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.down-nav #user div:nth-child(1),
+.down-nav #user div:nth-child(2) {
+  width: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.down-nav #user div:nth-child(1):hover,
+.down-nav #user div:nth-child(2):hover {
+  transform: scale(1.1);
+}
+#like {
+  align-self: flex-end;
+  position: relative;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+.like-heart {
+  margin-left: 8px;
+  margin-top: 2px;
+}
+.down-nav #user div:nth-child(4) {
+  width: 40px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.down-nav #user div:nth-child(4) p:nth-child(2) {
+  color: grey;
+}
+.down-nav #user div:nth-child(4) p:nth-child(1) {
+  color: black;
+  font-weight: bold;
+}
+/* and this one it's for departementd part and the side part*/
+/*   let's style  the women section that i'm going to hide it */
+
+#women-part {
+  position: absolute;
+  height: 350px;
+  width: 100vw;
+  background-color: aliceblue;
+  display: none;
+  transition: 1s;
+  z-index: 10;
+}
+#women-part #main-parent {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#women-part #main-parent nav {
+  height: 100%;
+}
+#women-part #main-parent nav h1 {
+  padding-top: 5px;
+  font-size: 20px;
+}
+#women-part #main-parent nav ul {
+  list-style: none;
+  position: relative;
+  height: 90%;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#women-part #main-parent nav ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  transition: 0.5s;
+}
+#women-part #main-parent nav ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  border-bottom: 2px solid gray;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.5s;
+}
+#women-part #main-parent nav ul li a:hover {
+  color: gray;
+}
+#women-part #main-parent nav ul li a:hover::after {
+  width: 50%;
+}
+#women-part #main-parent nav ul div {
+  display: flex;
+  justify-content: space-between;
+}
+#women-part #main-parent nav ul li i {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+#women-part #main-parent nav ul li:hover i {
+  color: gray;
+}
+#pic-parent {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  background-image: url(../all_pictures/products/apparel4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-self: center;
+  border-radius: 10px;
+}
+#pic-parent div {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -80%);
+  width: 90%;
+  height: 60px;
+  text-align: center;
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#pic-parent div button {
+  width: 100px;
+  height: 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: brown;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#pic-parent div button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px white;
+}
+/*   let's begin  the  search section*/
+
+#search-section {
+  top: 23%;
+  height: 100px;
+  background-color: rgba(164, 111, 214, 0.9);
+  display: flex;
+  align-items: flex-end;
+}
+.departement {
+  position: absolute;
+  left: 18.7%;
+  transform: translate(-18.5%);
+  width: 19.6%;
+  height: 60px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  color: white;
+}
+.search-parent {
+  position: absolute;
+  left: 70%;
+  transform: translate(-70%);
+  width: 450px;
+  height: 40px;
+  background-color: white;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.search-parent input {
+  width: 75%;
+  height: 100%;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.search-parent input:focus {
+  outline: none;
+}
+.search-parent i {
+  font-size: 16px;
+  color: grey;
+  padding-left: 5px;
+}
+.search-parent button {
+  width: 19%;
+  height: 100%;
+  background-color: maroon;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.search-parent button:hover {
+  box-shadow: inset 0 0 10px white;
+}
+/* now let's style the departements*/
+
+#articles {
+  position: relative;
+  width: 70%;
+  height: 500px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#departements {
+  width: 28%;
+  height: 80%;
+  display: block;
+  border: 2px solid palevioletred;
+}
+#departements nav {
+  position: relative;
+  width: 100%;
+  height: 9.09%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#departements nav:hover {
+  box-shadow: inset 0 0 10px black;
+  transform: scale(1.001);
+}
+#departements nav div {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#departements nav div h3 {
+  position: absolute;
+  left: 15%;
+  font-size: 16px;
+}
+#departements nav::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid grey;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+#slider-container {
+  width: 70%;
+  height: 80%;
+  background-color: yellowgreen;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+#companies {
+  width: 100%;
+  height: 19%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#companies div {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#companies div:hover {
+  transform: scale(1.1);
+}
+/*------------- let's create the departements side-part ------------*/
+
+#departements-side-part {
+  position: absolute;
+  left: 28%;
+  height: 80%;
+  width: 28%;
+  display: none;
+  z-index: 10;
+}
+#departements-side-part nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  display: none;
+  transition: 0.5s;
+}
+
+#departements-side-part .nav1 {
+  background-image: url(../all_pictures/menu/menu_bg1.jpg);
+}
+#departements-side-part .nav2 {
+  background-image: url(../all_pictures/menu/menu_bg2.jpg);
+}
+#departements-side-part .nav3 {
+  background-image: url(../all_pictures/menu/menu_bg3.jpg);
+}
+#departements-side-part .nav4 {
+  background-image: url(../all_pictures/menu/menu_bg4.jpg);
+}
+#departements-side-part nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+  padding-left: 20px;
+}
+#departements-side-part nav ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  cursor: pointer;
+}
+#departements-side-part nav ul li a::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  border-bottom: 2px solid black;
+  left: 0;
+  bottom: -2px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+#departements-side-part nav ul li a:hover::before {
+  width: 100%;
+}

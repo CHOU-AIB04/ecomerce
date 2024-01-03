@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="header_style.css" />
+    <title>Document</title>
+    <script src="../header.js"></script>
+    <script src="../departements.js"></script>
+  </head>
+  <body>
+    <!-- let's begin with the header part -->
+
+    <script>
+      headerpart();
+    </script>
+
+    <!-- let's create the women section (after cliking on women li)-->
+    <section id="women-part">
+      <div id="main-parent">
+        <nav id="women clothing">
+          <h1>Women's Clothing</h1>
+          <ul>
+            <li><a href="#">Dres</a></li>
+            <li><a href="#">Tops & tees</a></li>
+            <li><a href="#">jeckots & Cost</a></li>
+            <li><a href="#">Capris</a></li>
+            <li><a href="#">Sweaters</a></li>
+            <li><a href="#">Custumes</a></li>
+            <li><a href="#">hood</a></li>
+            <li><a href="#">Shorts</a></li>
+            <li><a href="#">Sweatshirts</a></li>
+            <li><a href="#">Switwear</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <h1>Jewelry</h1>
+          <ul>
+            <li><a href="#">Accessoires</a></li>
+            <li><a href="#">Bags</a></li>
+            <li><a href="#">Neciciaces</a></li>
+            <li><a href="#">Rings</a></li>
+            <li><a href="#">Earning</a></li>
+            <li><a href="#">Braclets</a></li>
+            <li><a href="#">Body Jewelry</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <h1>Beauty</h1>
+          <ul>
+            <li><a href="#">Bath Accessoires</a></li>
+            <li><a href="#">Makeup & Cosmetics</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Hair Care</a></li>
+            <li><a href="#">Essnetial Oils</a></li>
+            <li><a href="#">Fragrances</a></li>
+            <li><a href="#">Bath Bombs</a></li>
+            <li><a href="#">Face Mask</a></li>
+            <li><a href="#">Spa Kits</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <h1>Top Brands</h1>
+          <ul>
+            <div>
+              <li><a href="#">Nike</a></li>
+              <li><a href="#">Louirs Vuitton</a></li>
+            </div>
+            <div>
+              <li><a href="#">Hermes</a></li>
+              <li><a href="#">Gucci</a></li>
+            </div>
+            <div>
+              <li><a href="#">Zaiando</a></li>
+              <li><a href="#">Tiffarry</a></li>
+            </div>
+            <div>
+              <li><a href="#">Zara</a></li>
+              <li><a href="#">H&M</a></li>
+            </div>
+            <div>
+              <li><a href="#">Cartier</a></li>
+              <li><a href="#">Channel</a></li>
+            </div>
+            <li><a href="#">Hurley</a></li>
+            <li>
+              <a href="#">View all brands</a
+              ><i class="fas fa-long-arrow-alt-right"></i>
+            </li>
+          </ul>
+        </nav>
+        <div id="pic-parent">
+          <div>
+            <h1>Most Wanted!</h1>
+            <button>Order Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- and now let's create the search section -->
+    <section id="search-section">
+      <div class="departement">
+        <h2>All Departements</h2>
+        <p>Total 1059 products</p>
+      </div>
+      <div class="search-parent">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search for Products" />
+        <button type="submit">Search</button>
+      </div>
+    </section>
+    <!-- and now let's create  the departements that we have, slider picture and company -->
+    <section id="articles">
+      <div id="departements">
+        <script>
+          departement();
+        </script>
+      </div>
+      <!--let create the departements side-part-->
+
+      <section id="departements-side-part">
+        <script>
+          side_part();
+        </script>
+      </section>
+
+      <!-- this part it's for creating slider picture-->
+      <div id="slider-container">
+        <div id="slide-list">
+          <nav id="shoes">
+            <div>
+              <p>Shoes Fashion</p>
+              <h3>Come and Get it!</h3>
+              <h1>Brand New Shoes</h1>
+              <button>Shop Now</button>
+            </div>
+          </nav>
+          <nav id="women">
+            <div>
+              <p>Women Fashion</p>
+              <h3>Come and Get it!</h3>
+              <h1>Brand New Products</h1>
+              <button>Shop Now</button>
+            </div>
+          </nav>
+          <nav id="home">
+            <div>
+              <p>Home Fashion</p>
+              <h3>Come and Get it!</h3>
+              <h1>Brand New Products</h1>
+              <button>Shop Now</button>
+            </div>
+          </nav>
+          <nav id="training">
+            <div>
+              <p>training Fashion</p>
+              <h3>Come and Get it!</h3>
+              <h1>Brand New Products</h1>
+              <button>Shop Now</button>
+            </div>
+          </nav>
+        </div>
+        <div id="prev"><</div>
+        <div id="next">></div>
+        <ul id="bots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div id="companies">
+        <script>
+          let companies = document.getElementById("companies");
+          for (let i = 1; i <= 6; i++) {
+            let div = document.createElement("div");
+            let img = document.createElement("img");
+            div.appendChild(img);
+            companies.appendChild(div);
+            img.src = `../all_pictures/brands/brand${i}.png`;
+          }
+        </script>
+      </div>
+    </section>
+    <!--and now let's create the products part  ------>
+
+    <!--let's begin with trending-products-->
+
+    <section id="products">
+      <h1 id="tittle">Trending Products</h1>
+      <article id="trending-product">
+        <section id="special-offer">
+          <nav id="offer-end">
+            <h2>OFFER ENDS AT</h2>
+            <div>
+              <p>1</p>
+              <p>15</p>
+              <p>27</p>
+              <p>60</p>
+            </div>
+          </nav>
+          <nav id="offer-product">
+            <i class="far fa-heart" id="heart"></i>
+            <p>31%</p>
+          </nav>
+          <nav id="offer-info">
+            <div id="starts">
+              <div>
+                <i class="fas fa-star" style="color: gold"></i>
+                <i class="fas fa-star" style="color: gold"></i>
+                <i class="fas fa-star" style="color: gold"></i>
+                <i class="fas fa-star" style="color: gold"></i>
+                <i class="fas fa-star" style="color: gold"></i>
+              </div>
+              <p>(2,648)</p>
+            </div>
+            <h1>Happy Salled Womens Summer Boho Floral</h1>
+            <div id="offer-price">
+              <div id="price">
+                <h2>129,99$</h2>
+                <p>299,99$</p>
+              </div>
+              <div id="stock">
+                <div id="names">
+                  <p>Stock : <span>107</span></p>
+                  <p>Sold :<span>3,459</span></p>
+                </div>
+                <div id="count"></div>
+              </div>
+            </div>
+          </nav>
+        </section>
+
+        <section id="section2">
+          <!--this script it's for creating the section2 that contain 8 navs inside each nav 2 divs and inside each div some element -->
+          <script>
+            let section2 = document.getElementById("section2");
+            for (let i = 1; i <= 8; i++) {
+              let nav = document.createElement("nav");
+              section2.appendChild(nav);
+              for (let j = 1; j <= 2; j++) {
+                let div_container = document.createElement("div");
+                nav.appendChild(div_container);
+                if (j === 1) {
+                  div_container.classList.add("pic_container");
+                  let link = "../all_pictures/products/";
+                  if (i === 1) {
+                    div_container.style.backgroundImage = `url(${link}shoe1.jpg)`;
+                  } else if (i === 2) {
+                    div_container.style.backgroundImage = `url(${link}apparel3.jpg)`;
+                  } else if (i === 3) {
+                    div_container.style.backgroundImage = `url(${link}apparel2.jpg)`;
+                  } else if (i === 4) {
+                    div_container.style.backgroundImage = `url(${link}apparel1.jpg)`;
+                  } else if (i === 5) {
+                    div_container.style.backgroundImage = `url(${link}home1.jpg)`;
+                  } else if (i === 6) {
+                    div_container.style.backgroundImage = `url(${link}home2.jpg)`;
+                  } else if (i === 7) {
+                    div_container.style.backgroundImage = `url(${link}electronic3.jpg)`;
+                  } else {
+                    div_container.style.backgroundImage = `url(${link}home3.jpg)`;
+                  }
+                  let i_icon = document.createElement("i");
+                  let p = document.createElement("p");
+                  p.textContent = "30%";
+                  i_icon.classList.add("far");
+                  i_icon.classList.add("fa-heart");
+
+                  i_icon.id = "heart";
+                  div_container.appendChild(i_icon);
+                  div_container.appendChild(p);
+                } else {
+                  let h1 = document.createElement("h1");
+                  if (i === 1) {
+                    h1.textContent =
+                      "Men Slip On Shoes Casual with Arch Support Insoles";
+                  } else if (i === 2) {
+                    h1.textContent = "Black Women's Coat Dress";
+                  } else if (i === 3) {
+                    h1.textContent =
+                      "Women's Lightweight Knit Hoodie Sweater Pullover";
+                  } else if (i === 4) {
+                    h1.textContent = "Under Armour Men's Tech";
+                  } else if (i === 5) {
+                    h1.textContent =
+                      "Vonanda Velvet Sofa Couch,Mid Century Modern...";
+                  } else if (i === 6) {
+                    h1.textContent = "Dimmable Ceiling Light Modern";
+                  } else if (i === 7) {
+                    h1.textContent =
+                      "Wireless Headphones Over Ear,bluetooth Headphones with..";
+                  } else {
+                    h1.textContent =
+                      "Modern Storage Cabinet with Door & 3 Drawers";
+                  }
+
+                  div_container.appendChild(h1);
+                  div_container.classList.add("product-info");
+                  for (let x = 1; x <= 3; x++) {
+                    let div = document.createElement("div");
+                    div_container.appendChild(div);
+                    if (x === 1) {
+                      div.classList.add("first");
+                      let start_container = document.createElement("div");
+                      div.appendChild(start_container);
+                      let p = document.createElement("p");
+                      p.textContent = "(2,548)";
+                      div.appendChild(p);
+                      for (let w = 1; w <= 5; w++) {
+                        let i_star = document.createElement("i");
+                        i_star.classList.add("fas");
+                        i_star.classList.add("fa-star");
+                        i_star.style.color = "gold";
+                        start_container.appendChild(i_star);
+                      }
+                    } else if (x === 2) {
+                      div.classList.add("second");
+                      let h2 = document.createElement("h2");
+                      if (i === 1) {
+                        h2.textContent = "80.90$";
+                      } else if (i === 2) {
+                        h2.textContent = "45.95$";
+                      } else if (i === 3) {
+                        h2.textContent = "56.50$";
+                      } else if (i === 4) {
+                        h2.textContent = "37.50$";
+                      } else if (i === 5) {
+                        h2.textContent = "469.99$";
+                      } else if (i === 6) {
+                        h2.textContent = "279.99$";
+                      } else if (i === 7) {
+                        h2.textContent = "99.98$";
+                      } else {
+                        h2.textContent = "129.99$";
+                      }
+                      let p = document.createElement("p");
+                      p.textContent = "199,99$";
+                      div.appendChild(h2);
+                      div.appendChild(p);
+                    } else {
+                      div.classList.add("third");
+                      let p1 = document.createElement("p");
+                      let p2 = document.createElement("p");
+                      p1.textContent = "2300 Sold";
+                      p2.textContent = "free shipping";
+                      div.appendChild(p1);
+                      div.appendChild(p2);
+                    }
+                  }
+                }
+              }
+            }
+          </script>
+        </section>
+      </article>
+      <article id="featured-article">
+        <div id="article-name">
+          <h1 id="#tittle">Featured Products</h1>
+          <div>
+            <p>View all</p>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+        <section id="featured-products">
+          <script>
+            // this script it's for create featured-products section that contain 8 nav on each some elements...
+            let featured_products =
+              document.getElementById("featured-products");
+            for (let i = 1; i <= 8; i++) {
+              let nav = document.createElement("nav");
+              featured_products.appendChild(nav);
+              for (let j = 1; j <= 3; j++) {
+                let div = document.createElement("div");
+                nav.appendChild(div);
+                if (j === 1) {
+                  div.classList.add("picture_container");
+                  let link = "../all_pictures/products/";
+                  if (i === 1) {
+                    div.style.backgroundImage = `url(${link}apparel1.jpg)`;
+                  } else if (i === 2) {
+                    div.style.backgroundImage = `url(${link}apparel2.jpg)`;
+                  } else if (i === 3) {
+                    div.style.backgroundImage = `url(${link}apparel3.jpg)`;
+                  } else if (i === 4) {
+                    div.style.backgroundImage = `url(${link}apparel4.jpg)`;
+                  } else if (i === 5) {
+                    div.style.backgroundImage = `url(${link}shoe1.jpg)`;
+                  } else if (i === 6) {
+                    div.style.backgroundImage = `url(${link}shoe2.jpg)`;
+                  } else if (i === 7) {
+                    div.style.backgroundImage = `url(${link}shoe3.jpg)`;
+                  } else {
+                    div.style.backgroundImage = `url(${link}shoe4.jpg)`;
+                  }
+                  let i_icon = document.createElement("i");
+                  let p = document.createElement("p");
+                  i_icon.classList.add("far");
+                  i_icon.classList.add("fa-heart");
+                  i_icon.id = "heart";
+                  p.textContent = "25%";
+                  div.appendChild(i_icon);
+                  div.appendChild(p);
+                } else if (j === 2) {
+                  div.classList.add("rate");
+                  let star_container = document.createElement("div");
+                  let p = document.createElement("p");
+                  p.textContent = "(2,450)";
+                  div.appendChild(star_container);
+                  div.appendChild(p);
+
+                  for (let s = 1; s <= 5; s++) {
+                    let i_star = document.createElement("i");
+                    i_star.classList.add("fas");
+                    i_star.classList.add("fa-star");
+                    i_star.style.color = "gold";
+                    star_container.appendChild(i_star);
+                  }
+                } else {
+                  div.classList.add("product-details");
+                  for (let d = 1; d <= 2; d++) {
+                    let child_div = document.createElement("div");
+                    div.appendChild(child_div);
+                    if (d === 1) {
+                      let h2 = document.createElement("h2");
+                      child_div.appendChild(h2);
+                      if (i === 1) {
+                        h2.textContent = "Under Armour Men's Tech";
+                      } else if (i === 2) {
+                        h2.textContent =
+                          "Women's Lightweight Knit Hoodie Sweater Pullover";
+                      } else if (i === 3) {
+                        h2.textContent =
+                          "Happy Sailed Women's Summer Boho Floral";
+                      } else if (i === 4) {
+                        h2.textContent = "Women's Summer Boho Floral";
+                      } else if (i === 5) {
+                        h2.textContent =
+                          "Men Slip on shoes casual with Arch Support insoles";
+                      } else if (i === 6) {
+                        h2.textContent =
+                          "Skechers Women's Go Joy Walking Shoe Sneaker";
+                      } else if (i === 7) {
+                        h2.textContent = "Walking Shoe Sneaker Women's";
+                      } else {
+                        h2.textContent = "Women's Summer Tosca Shoe";
+                      }
+                    } else {
+                      let h3 = document.createElement("h3");
+                      let p = document.createElement("p");
+                      if (i === 1) {
+                        h3.textContent = "56.50$";
+                        p.textContent = "75.50$";
+                      } else if (i === 2) {
+                        h3.textContent = "37.50$";
+                        p.textContent = "46.50$";
+                      } else if (i === 3) {
+                        h3.textContent = "129.99$";
+                        p.textContent = "189,99$";
+                      } else if (i === 4) {
+                        h3.textContent = "118.90$";
+                        p.textContent = "189,99$";
+                      } else if (i === 5) {
+                        h3.textContent = "80.90$";
+                        p.textContent = "119,99$";
+                      } else if (i === 6) {
+                        h3.textContent = "45.95$";
+                        p.textContent = "78.99$";
+                      } else if (i === 7) {
+                        h3.textContent = "139.99$";
+                        p.textContent = "180.99$";
+                      } else {
+                        h3.textContent = "104.90$";
+                        p.textContent = "119,99$";
+                      }
+                      child_div.appendChild(h3);
+                      child_div.appendChild(p);
+                    }
+                  }
+                }
+              }
+            }
+          </script>
+        </section>
+      </article>
+    </section>
+    <section id="brutal-section">
+      <script>
+        let brutal_section = document.getElementById("brutal-section");
+        // this script it's create two divs inside the brutal section and inside each dov some elements
+        for (let i = 1; i <= 2; i++) {
+          let div = document.createElement("div");
+          div.classList.add("brutals");
+          div.style.backgroundImage = `url(../all_pictures/banner/banner${i}.jpg`;
+          brutal_section.appendChild(div);
+          let p = document.createElement("p");
+          let h_container = document.createElement("div");
+          div.appendChild(p);
+          div.appendChild(h_container);
+          let h3 = document.createElement("h3");
+          let h1 = document.createElement("h1");
+          h_container.appendChild(h3);
+          h_container.appendChild(h1);
+          let button = document.createElement("button");
+          div.appendChild(button);
+          p.textContent = "Brutal Salel";
+          button.textContent = "Shop Now";
+          if (i === 1) {
+            h3.textContent = "Get the deal in here";
+            h1.textContent = "Living Room Chair";
+          } else {
+            h3.textContent = "Discount everyday";
+            h1.textContent = "Office Outfit";
+          }
+        }
+      </script>
+    </section>
+    <section id="additional-product">
+      <script>
+        let additional = document.getElementById("additional-product");
+        for (let i = 1; i <= 3; i++) {
+          let nav = document.createElement("nav");
+          additional.appendChild(nav);
+          for (let d = 1; d <= 2; d++) {
+            let div = document.createElement("div");
+            nav.appendChild(div);
+            if (d === 1) {
+              div.classList.add("img-container");
+              div.style.backgroundImage = `url(../all_pictures/banner/procat${i}.jpg`;
+            } else {
+              div.classList.add("informations");
+              let h1 = document.createElement("h1");
+              let ul = document.createElement("ul");
+              let view = document.createElement("div");
+              let p = document.createElement("p");
+              p.textContent = "View all";
+              let i_icon = document.createElement("i");
+              i_icon.classList.add("fas");
+              i_icon.classList.add("fa-long-arrow-alt-right");
+              view.appendChild(p);
+              view.appendChild(i_icon);
+              div.appendChild(h1);
+              div.appendChild(ul);
+              div.appendChild(view);
+              for (let x = 1; x <= 5; x++) {
+                let li = document.createElement("li");
+                let a = document.createElement("a");
+                ul.appendChild(li);
+                li.appendChild(a);
+                a.href = "#";
+                if (i === 1) {
+                  h1.textContent = "Beauty";
+                  if (x === 1) {
+                    a.textContent = "Makeup";
+                  } else if (x === 2) {
+                    a.textContent = "Skin Care";
+                  } else if (x === 3) {
+                    a.textContent = "Hair Care";
+                  } else if (x === 4) {
+                    a.textContent = "Frangrance";
+                  } else {
+                    a.textContent = "Foot & Hand Care";
+                  }
+                } else if (i === 2) {
+                  h1.textContent = "Gatdets";
+                  if (x === 1) {
+                    a.textContent = "Camera";
+                  } else if (x === 2) {
+                    a.textContent = "Cell Phones";
+                  } else if (x === 3) {
+                    a.textContent = "Computers";
+                  } else if (x === 4) {
+                    a.textContent = "GPS & Navigation";
+                  } else {
+                    a.textContent = "Headphones";
+                  }
+                } else {
+                  h1.textContent = "Home";
+                  if (x === 1) {
+                    a.textContent = "Decor";
+                  } else if (x === 2) {
+                    a.textContent = "Dining Flowers";
+                  } else if (x === 3) {
+                    a.textContent = "Pantry";
+                  } else if (x === 4) {
+                    a.textContent = "Great Room";
+                  } else {
+                    a.textContent = "Breakfast Noox";
+                  }
+                }
+              }
+            }
+          }
+        }
+      </script>
+    </section>
+    <section id="email-section">
+      <script>
+        let email = document.getElementById("email-section");
+        for (let i = 1; i <= 2; i++) {
+          let div = document.createElement("div");
+          email.appendChild(div);
+          if (i === 1) {
+            div.classList.add("join");
+            let h1 = document.createElement("h1");
+            h1.textContent = "Join Our Newletter";
+            let p = document.createElement("p");
+            let a = document.createElement("a");
+            a.href = "#";
+            div.appendChild(h1);
+            div.appendChild(p);
+            p.textContent = "Get Email updates about our latest shop and ";
+            a.textContent = "special offers";
+            p.appendChild(a);
+          } else {
+            div.classList.add("sent");
+            let i_icon = document.createElement("i");
+            i_icon.classList.add("fas");
+            i_icon.classList.add("fa-envelope");
+            i_icon.style.color = "rgb(85, 77, 77)";
+            let input = document.createElement("input");
+            input.type = "text";
+            input.placeholder = "Your email adress";
+            let button = document.createElement("button");
+            div.appendChild(i_icon);
+            div.appendChild(input);
+            div.appendChild(button);
+            button.textContent = "Sign Up";
+          }
+        }
+      </script>
+    </section>
+    <section id="links-section">
+      <script>
+        let links = document.getElementById("links-section");
+        for (let i = 1; i <= 4; i++) {
+          let div = document.createElement("div");
+          links.appendChild(div);
+          let h1 = document.createElement("h1");
+          let ul = document.createElement("ul");
+          div.appendChild(h1);
+          div.appendChild(ul);
+          if (i === 1) {
+            h1.textContent = "Help & Contact";
+            for (let x = 1; x <= 7; x++) {
+              let li = document.createElement("li");
+              let a = document.createElement("a");
+              a.href = "#";
+              ul.appendChild(li);
+              li.appendChild(a);
+              if (x === 1) {
+                a.textContent = "Your Account";
+              } else if (x === 2) {
+                a.textContent = "Your Orders";
+              } else if (x === 3) {
+                a.textContent = "Shipping Rates";
+              } else if (x === 4) {
+                a.textContent = "Returns";
+              } else if (x === 5) {
+                a.textContent = "Assistance";
+              } else if (x === 6) {
+                a.textContent = "Help";
+              } else {
+                a.textContent = "Contact us";
+              }
+            }
+          } else if (i === 2) {
+            h1.textContent = "Product Categories";
+            for (let x = 1; x <= 10; x++) {
+              let li = document.createElement("li");
+              let a = document.createElement("a");
+              a.href = "#";
+              ul.appendChild(li);
+              li.appendChild(a);
+              if (x === 1) {
+                a.textContent = "Beauty";
+              } else if (x === 2) {
+                a.textContent = "Electronic";
+              } else if (x === 3) {
+                a.textContent = "Women's Fashion";
+              } else if (x === 4) {
+                a.textContent = "Men's Fashion";
+              } else if (x === 5) {
+                a.textContent = "Girl's Fashion";
+              } else if (x === 6) {
+                a.textContent = "Boy's Fashion";
+              } else if (x === 7) {
+                a.textContent = "Health & Household";
+              } else if (x === 8) {
+                a.textContent = "Home & Kitchen";
+              } else if (x === 9) {
+                a.textContent = "Pet Supplies";
+              } else {
+                a.textContent = "Sports";
+              }
+            }
+          } else if (i === 3) {
+            h1.textContent = "Payment Info";
+            for (let x = 1; x <= 4; x++) {
+              let li = document.createElement("li");
+              let a = document.createElement("a");
+              a.href = "#";
+              ul.appendChild(li);
+              li.appendChild(a);
+              if (x === 1) {
+                a.textContent = "Business Card";
+              } else if (x === 2) {
+                a.textContent = "Shop with Points";
+              } else if (x === 3) {
+                a.textContent = "Reload Your Balance";
+              } else {
+                a.textContent = "Paypal";
+              }
+            }
+          } else {
+            h1.textContent = "About Us";
+            for (let x = 1; x <= 6; x++) {
+              let li = document.createElement("li");
+              let a = document.createElement("a");
+              a.href = "#";
+              ul.appendChild(li);
+              li.appendChild(a);
+              if (x === 1) {
+                a.textContent = "Company Info";
+              } else if (x === 2) {
+                a.textContent = "News";
+              } else if (x === 3) {
+                a.textContent = "Investors";
+              } else if (x === 4) {
+                a.textContent = "Careers";
+              } else if (x === 5) {
+                a.textContent = "Policies";
+              } else {
+                a.textContent = "Customer reviews";
+              }
+            }
+          }
+        }
+      </script>
+    </section>
+    <section id="social-links">
+      <div id="parent">
+        <h1>.Store</h1>
+        <div>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Copyright@2023 .Store.All right reserved</p>
+      </div>
+    </section>
+    <script src="main2.js"></script>
+  </body>
+</html>
